@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fcc-test-suite-template/css/styles.css">
+    
 </head>
 <body>
     <div class="container">
         <header class="heading">
             <h1 id="title">freeCodeCamp Survey Form</h1>
-            <p class="survey-text">Thank you for the time to help us improve the platform</p>
+            <p class="survey-text" id="description">Thank you for the time to help us improve the platform</p>
         </header>
-        <form action="" id="surveyForm">
+        <form action="" id="survey-form">
             <div class="forminfo">
-                <label for="name" id="Name">Name</label>
+                <label for="name" id="name-label">Name</label>
                 <input class="forms" type="text" id="name" placeholder="Enter your name" required>
                 
             </div>
             <div class="formifo">
-                <label for="email" id="email">E-mail</label>
-                <input  class="forms" type="email" id="email" placeholder="Enter your email" required>
+                <label for="email" id="email-label">E-mail</label>
+                <input  class="forms" type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="forminfo">
-                <label for="Number" id="Number">Age</label>
+                <label for="Number" id="number-label">Age</label>
                 <input  class="forms" type="number" id="number" placeholder="Age" min="18" max="120">
             </div>
             <div class="forminfo">
@@ -79,6 +80,6 @@
               </div>
         </form>
     </div>
-    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
